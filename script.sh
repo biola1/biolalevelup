@@ -1,7 +1,6 @@
-#!/bin/bash/
-sudo yum update 
+#!/bin/bash
+sudo yum update -y
 sudo yum install httpd -y
-sudo systemctl start httpd -y
-sudo chmod +x script.sh
-sudo ./script.sh
+sudo systemctl start httpd 
+
 echo "Hello World" >> /var/www/index.html
